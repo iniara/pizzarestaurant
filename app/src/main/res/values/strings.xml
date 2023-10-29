@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pizza Restaurant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nameEditText">Please fill your name</string>
+    <string name="storeText">Store</string>
+    <string name="yourName">Your Name</string>
+    <string name="storePagetwo">Store</string>
+    <string name="location">Location</string>
+    <string name="sampingStore">Cihampelas</string>
+    <string name="maps">Find on Maps</string>
+    <string name="textview_first">Hello, Asep</string>
+    <string name="harga">Price: Rp 66.000,00</string>
+</resources>

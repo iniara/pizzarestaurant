@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <ImageView
+        android:id="@+id/logoPerson"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:src="@drawable/person"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textBesideLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Hello, Asep"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/logoPerson"
+        app:layout_constraintTop_toTopOf="@+id/logoPerson" />
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoPerson"
+        app:srcCompat="@drawable/pepperoni_pizza"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/text_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/pizza"
+        app:layout_constraintTop_toTopOf="@+id/pizza"
+        android:text="Pepperoni Pizza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginStart="16dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/desc_pizza"
+        android:layout_width="213dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:text="Cocok bagi anda yang ingin merasakan pizza original dengan taburan keju dan daging asap yang lezat"
+        android:textColor="#733F0E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/pizza"
+        app:layout_constraintTop_toBottomOf="@+id/text_pizza" />
+
+    <ImageView
+        android:id="@+id/spaghetti"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza"
+        app:srcCompat="@drawable/spaghetti"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_spaghetti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/spaghetti"
+        app:layout_constraintTop_toTopOf="@+id/spaghetti"
+        android:text="Spaghetti"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/desc_spaghetti"
+        android:layout_width="213dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:text="Cocok bagi anda yang ingin merasakan spaghetti original dengan bumbu yang oriental"
+        android:textColor="#733F0E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/spaghetti"
+        app:layout_constraintTop_toBottomOf="@+id/text_spaghetti" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spaghetti"
+        app:srcCompat="@drawable/burger"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/burger"
+        app:layout_constraintTop_toTopOf="@+id/burger"
+        android:text="Burger"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/desc_burger"
+        android:layout_width="213dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:text="Cocok bagi anda yang ingin merasakan kelembutan burger berlapiskan keju, sayuran dan daging yang tebal"
+        android:textColor="#733F0E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/burger"
+        app:layout_constraintTop_toBottomOf="@+id/text_burger" />
+
+    <ImageView
+        android:id="@+id/steak"
+        android:layout_width="121dp"
+        android:layout_height="121dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/burger"
+        app:srcCompat="@drawable/steak"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_steak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/steak"
+        app:layout_constraintTop_toTopOf="@+id/steak"
+        android:text="Steak"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#733F0E"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/desc_steak"
+        android:layout_width="213dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:text="Cocok bagi anda yang ingin merasakan lezatnya daging steak dipadukan dengan kentang yang lezat"
+        android:textColor="#733F0E"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/steak"
+        app:layout_constraintTop_toBottomOf="@+id/text_steak" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="59dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/steak"
+        app:layout_constraintTop_toBottomOf="@+id/steak"
+        app:srcCompat="@drawable/add_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
